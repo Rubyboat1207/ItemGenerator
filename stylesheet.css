@@ -20,7 +20,7 @@ html{
     /*center div*/
     margin: auto;
     /*make div square*/
-    width: 810px;
+    width: 607px;
     height: fit-content;
 }
 .itemBox {
@@ -31,23 +31,23 @@ html{
     border-top: 10px solid #373737;
     
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     /*create second border*/
 
     /*center div*/
     margin-left: auto;
     margin-right: auto;
     /*make div square*/
-    width: 200px;
-    height: 200px;
+    width: 146px;
+    height: 146px;
 }
 .itemBox img{
-    width: 195px;
+    width: 146px;
 }
 .itemName {
     padding-left: 20px;
     font-family: minecraft;
-    font-size: 35px;
+    font-size: 27px;
     color: #FFFFFF;
     margin-top: 10px;
     /*drop shadow with no blur*/
@@ -56,17 +56,17 @@ html{
 .itemStatsTitle {
     padding-left: 20px;
     font-family: minecraft;
-    font-size: 35px;
+    font-size: 27px;
     color: #A8A8A8;
     margin-top: 10px;
     /*drop shadow with no blur*/
     text-shadow: 4px 4px 0px #292929;
 }
 .itemStats {
-    padding-left: 20px;
+    padding-left: 40px;
     padding-top: 30px;
     font-family: minecraft;
-    font-size: 20px;
+    font-size: 15px;
     color: #00A800;
     margin-top: 10px;
     /*drop shadow with no blur*/
@@ -74,15 +74,15 @@ html{
 }
 .generate {
     image-rendering: pixelated;
-    width: 400px;
+    width: 300px;
     display: block;
     margin: auto;
 }
 .generate-text{
     font-family: minecraft;
     position: relative; 
-    bottom: 70px; 
-    font-size: 36px;
+    bottom: 54px; 
+    font-size: 27px;
     color: #42b8eb;
-    text-shadow: 5px 5px 0px #0f3749;
+    text-shadow: 3px 3px 0px #0f3749;
 }
