@@ -432,7 +432,7 @@ class CustomItem
     }
     public static getStatwithType(type: CustomItemType, chanceofSpecial: number, statnum: number): ItemStat {
         let stat: Stat = Stats.getStatWithType(type)[statnum];
-        return stat.toItemStat(stat == Stats.duribility ? new RoundModifier() : new DisplayModifier() , Math.floor(Math.random() * chanceofSpecial) + 1 == 1 ? SpecialTypes.getRandomSpecialType() : null)
+        return stat.toItemStat(stat == Stats.durability ? new RoundModifier() : new DisplayModifier() , Math.floor(Math.random() * chanceofSpecial) + 1 == 1 ? SpecialTypes.getRandomSpecialType() : null)
     }
     public static getBonusStatwithType(type: CustomItemType,statnum: number): ItemStat {
         let stat: Stat = Stats.getBonusStatWithType(type)[statnum];
@@ -592,7 +592,7 @@ class CustomItemTypes {
 class Stats {
     //----- Normal Stats -----
     static damage: Stat = new Stat("Deals {v} {e} damage", [CustomItemTypes.weapon, CustomItemTypes.axe, CustomItemTypes.sword], 2, 10, 1, true).register();
-    static duribility: Stat = new Stat("Has {v} {e} duribility points", CustomItemTypes.getAllTypesExcluding([CustomItemTypes.food]), 250, 2500, 0, false).register();
+    static durability: Stat = new Stat("Has {v} {e} durability points", CustomItemTypes.getAllTypesExcluding([CustomItemTypes.food]), 250, 2500, 0, false).register();
     static knockback: Stat = new Stat("Deals {v} extra knockback", [CustomItemTypes.weapon, CustomItemTypes.axe, CustomItemTypes.sword], 1.5, 3, 3, true).register();
     static attackSpeed: Stat = new Stat("Has a {v} {e} attack speed", [CustomItemTypes.weapon, CustomItemTypes.axe, CustomItemTypes.sword], 1, 5, 2, true).register();
     static mineSpeed: Stat = new Stat("Mines at a {e} mining speed of {v}", [CustomItemTypes.pickaxe], 0.75, 4, 0, true).register();
